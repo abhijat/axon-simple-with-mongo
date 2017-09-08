@@ -36,7 +36,7 @@ public class AxonConfig {
 
     @Bean
     public MongoTemplate mongoTemplate() {
-        return new DefaultMongoTemplate(mongo());
+        return new DefaultMongoTemplate(mongo(), "mydb", "myevents", "mysnapshots");
     }
 
     @Bean
