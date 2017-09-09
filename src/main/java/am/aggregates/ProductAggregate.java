@@ -18,7 +18,8 @@ public class ProductAggregate {
     private String name;
     private double price;
 
-    public ProductAggregate() {}
+    public ProductAggregate() {
+    }
 
     @CommandHandler
     public ProductAggregate(final CreateProductCommand command) {
